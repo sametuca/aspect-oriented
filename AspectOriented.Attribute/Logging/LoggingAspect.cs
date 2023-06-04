@@ -2,6 +2,7 @@
 
 namespace AspectOriented.Attribute.Logging
 {
+    //there using PostSharp
     public class LoggingAspect : OnMethodBoundaryAspect
     {
         public override void OnEntry(MethodExecutionArgs args)
