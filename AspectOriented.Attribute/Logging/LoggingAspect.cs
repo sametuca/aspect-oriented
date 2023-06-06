@@ -8,13 +8,13 @@ namespace AspectOriented.Attribute.Logging
         public override void OnEntry(MethodExecutionArgs args)
         {
             base.OnEntry(args);
-            Console.WriteLine("Hesaplama işlemine başlanıyor...");
+            args.ReturnValue = "Hesaplama işlemine başlanıyor...";
         }
 
         public override void OnExit(MethodExecutionArgs args)
         {
             base.OnExit(args);
-            Console.WriteLine("Hesaplama işlemi tamamlandı.");
+            args.ReturnValue = "Hesaplama işlemi bitti...";
         }
     }
 }
